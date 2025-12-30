@@ -40,8 +40,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/juanfradelrm/portfolio-room-3d.git
-cd portfolio-room-3d
+git clone https://github.com/juanfradelrm/vite-portfolio3D.git
 ```
 
 2. **Instalar dependencias**
