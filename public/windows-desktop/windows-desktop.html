@@ -1,0 +1,55 @@
+<!-- Escritorio virtual estilo Windows -->
+<div id="windows-desktop">
+  <div class="windows-icons">
+    <div class="windows-icon" data-app="pdf">
+      <a href="/windows-desktop/CV.pdf" target="_blank" rel="noopener noreferrer">
+        <img src="/windows-desktop/PDFIcon.png" alt="PDF">
+        <span>CV</span>
+      </a>
+    </div>
+    <div class="windows-icon" data-app="gallery" id="gallery-icon">
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.18"/>
+          <circle cx="8.5" cy="10.5" r="1.5" fill="#fff" fill-opacity="0.9"/>
+          <path d="M21 19l-5-6-4 5-3-4-5 6h17z" fill="#fff" fill-opacity="0.9"/>
+        </svg>
+        <span>Galería-Proyectos</span>
+      </div>
+    </div>
+  </div>
+  <div class="windows-taskbar">
+    <button class="start-btn" aria-label="Inicio" title="Inicio" style="background:none;border:none;cursor:pointer;padding:4px;display:flex;align-items:center;color:#fff;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="3" width="9" height="8" fill="#00A4EF"/>
+        <rect x="13" y="3" width="9" height="8" fill="#0078D7"/>
+        <rect x="2" y="13" width="9" height="8" fill="#00A4EF"/>
+        <rect x="13" y="13" width="9" height="8" fill="#0078D7"/>
+      </svg>
+    </button>
+    <button class="shutdown-btn">Apagar</button>
+  </div>
+
+  <!-- Video viewer modal -->
+  <div id="video-viewer" class="video-viewer" hidden>
+    <div class="video-overlay" data-close></div>
+    <div class="video-container">
+      <button class="video-close" aria-label="Cerrar">×</button>
+      <button class="video-prev" aria-label="Anterior">‹</button>
+      <div class="video-frame-wrap">
+        <iframe id="video-iframe" src="" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <button class="video-next" aria-label="Siguiente">›</button>
+      <div class="video-caption" id="video-caption"></div>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="video-links">
+  [
+    { "url": "https://youtu.be/D1rzEaYLKVM", "title": "Sistema Solar" },
+    { "url": "https://youtu.be/LR4-FoNl52I?si=yRws7YAexHGUQihS", "title": "Aim Assist" },
+    { "url": "https://youtu.be/HBykMgkHAYU?si=MIhaZ6ykDmcTxjnd", "title": "API AWS" },
+    { "url": "https://youtu.be/Ow-w1850Hfw?si=CGqP0BP6N8Ey6OBB", "title": "PanelOn" }
+  ]
+</script>

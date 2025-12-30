@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Room 3D Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+
+    <!-- Spinner-->
+    <div id="loading-spinner" class="loading-spinner" aria-label="Cargando" aria-live="polite">
+      <div class="spinner"></div>
+      <span class="spinner-label">Cargando...</span>
+    </div>
+
+    <!-- UI overlay -->
+    <div class="ui-topbar" aria-hidden="true">
+      <div class="ui-brand">Room 3D</div>
+    </div>
+
+    <!-- Lighting Menu -->
+    <div class="lighting-menu" id="lighting-menu">
+      <div class="lighting-menu-header">
+        <span class="lighting-menu-title">💡 Iluminación</span>
+        <button class="lighting-menu-toggle" id="lighting-toggle" aria-label="Toggle menu">▼</button>
+      </div>
+      <div class="lighting-menu-content" id="lighting-content">
+        <div class="lighting-control">
+          <label for="ambient-slider">Luz Ambiente</label>
+          <input type="range" id="ambient-slider" min="0" max="100" value="60" class="slider">
+          <span id="ambient-value">0.60</span>
+        </div>
+        <div class="lighting-control">
+          <label for="lamp-slider">Luz Lámpara</label>
+          <input type="range" id="lamp-slider" min="0" max="100" value="90" class="slider">
+          <span id="lamp-value">0.90</span>
+        </div>
+        <div class="lighting-control">
+          <label for="lamp-color">Color Lámpara</label>
+          <input type="color" id="lamp-color" value="#fff2cc" class="color-picker">
+        </div>
+        <button id="lighting-reset" class="lighting-reset-btn">Reiniciar</button>
+      </div>
+    </div>
+
+    <!-- Focus controls (hidden until focus mode) -->
+    <div class="ui-focus" id="ui-focus">
+      <button id="focus-prev" class="focus-btn" aria-label="Anterior">◀</button>
+      <div id="focus-label" class="focus-label"></div>
+      <button id="focus-next" class="focus-btn" aria-label="Siguiente">▶</button>
+      <div id="focus-hint" class="focus-hint" aria-hidden="true">Press Esc to exit</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
