@@ -59,9 +59,9 @@ Abre tu navegador y visita la URL que Vite proporciona en la consola (normalment
 
 ## Autor
 
-**Juan Francisco Adel**
+**Juan Francisco Del Rosario Machin**
 
-- GitHub: [@juanfradelrm](https://github.com/juanfradelrm)
+
 
 ## Contexto académico
 
